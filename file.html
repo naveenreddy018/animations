@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  perspective:800px;
+  background-image: url(https://images5.alphacoders.com/372/thumb-1920-372183.jpg);
+  animation-name: body;
+  animation-duration: 10s;
+  box-shadow: 10px 10px 100px green, 10px 10px 100px blue;
+  animation-iteration-count: infinite;
+  box-shadow:10px 10px 100px red inset;
+
+}
+        .cube{
+            text-align: center;
+           width: 150px;
+           height: 100px;
+            margin: auto;
+           position: relative;
+           top:100px;
+           border-radius: 100%;
+            font-size: 40px;
+            transform-style: preserve-3d;
+  transform: rotatex(-45deg) rotateY(30deg);
+  animation-name: cube;
+  animation-duration: 5s;
+box-shadow: 10px 10px 100px;
+  animation-iteration-count: infinite;
+  
+        
+        }
+        .cube2{
+            text-align: center;
+           width: 150px;
+           height: 100px;
+            margin: auto;
+           position: relative;
+           top:100px;
+           left:500px;
+            font-size: 40px;
+            transform-style: preserve-3d;
+  transform: rotatex(-45deg) rotateY(30deg);
+  animation-name: cube2;
+  animation-duration: 5s;
+  box-shadow: 10px 10px 100px 25px green;
+  animation-iteration-count: infinite;
+ 
+  
+        }
+        .cube3{
+            text-align: center;
+           width: 150px;
+           height: 100px;
+            margin: auto;
+           position: relative;
+           top:100px;
+           right:500px;
+            font-size: 40px;
+            transform-style: preserve-3d;
+  transform: rotatex(-45deg) rotateY(30deg);
+  animation-name: cube3;
+  animation-duration: 5s;
+
+  animation-iteration-count: infinite;
+        
+        }
+  
+        .cube4{
+            text-align: center;
+           width: 150px;
+           height: 100px;
+            margin: auto;
+           position: relative;
+           top:200px;
+            font-size: 40px;
+            transform-style: preserve-3d;
+  transform: rotatex(-45deg) rotateY(30deg);
+  animation-name: cube4;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+        
+        }
+        .side{
+            width:100px;
+            height: 100px;
+            text-align: center;
+            border: 2px solid;
+            background-color: rgba(100,100,100,0.5);
+            position: absolute;
+            text-align: center;
+            display: flex;
+        
+            justify-content: center;
+            align-items: center;
+        }
+        @keyframes body {
+            50%{
+                transform: translateX(100px)translateY(-150px);
+            }
+            100%{
+                transform: translateX(-200px) translateY(200px) rotate(360deg);
+            }
+        }
+        @keyframes cube4 {
+            0%{
+                transform: rotate(0deg);
+
+            }
+            50%{
+                transform: rotateX(205deg) rotatey(-2504deg);
+            }
+            75%{
+                transform: rotatey(360deg) rotatez(2515deg);
+            }
+            100%{
+                transform: rotate(360deg) scale(10) translate3d(100px);
+            }
+        }
+        @keyframes cube3 {
+            0%{
+                transform: rotate(0deg);
+            } 
+            25%{
+                transform: rotatey(360deg) rotateX(78deg);
+            }
+            50%{
+                transform: rotate(4520deg) rotateZ(-500deg);
+            }   
+            75%{
+                transform: rotatey(3600deg) rotateY(-4544deg);
+            }  
+            100%{
+                transform:  scale(5);
+            }      
+        }
+        @keyframes cube2 {
+            0%{
+                transform: rotate(50deg);
+            }
+            50%{
+                transform: rotate3d(360deg) translateX(50px);
+            }
+            75%{
+                transform: rotatey(360deg) translatey(50px);
+            }
+            100%{
+                transform: rotatez(3600deg) translatez(50px);
+            }
+            
+        }
+        @keyframes cube {
+            0%{
+                transform: rotate(0deg);
+            }
+            25%{
+                transform:rotatex(-360deg) ;
+            }
+            50%{
+                transform:rotatey(360deg) ;
+            }
+            75%{
+                transform:rotatex(360deg) ;
+            }
+        }
+        .one{
+           transform: translatez(50px) ;
+        }
+        .two{
+            transform: rotatex(-90deg) translatez(50px);
+        }
+        .three{
+            transform: rotatex(90deg) translatez(50px);
+        }
+        .four{
+            transform: rotateY(90deg) translateZ(50px);
+        }
+        .five{
+            transform: rotatey(-90deg) translateZ(50px);
+        }
+        .six{
+            transform: rotateX(180deg) translateZ(50px);
+        }
+   
+       /*  button:hover + .cube{
+            transform: rotatex(3600deg);
+          
+        } */
+        .scroll{
+            background-color:rgba(100,100,100,0.5);
+            width:100%;
+            font-size: 100px;
+            position: relative;
+            top:100px;
+            display: flex;
+            justify-content: center;
+            height:50px;
+            align-items: center;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="cube">
+        <div class="side one"><img src="https://tse1.mm.bing.net/th?id=OIP.qFFaU_MRr4tKVugYQbhpxQHaEo&pid=Api&P=0&h=180" width="100" height="100"> </div>
+        <div class="side two"><img src="https://pluspng.com/img-png/swag-png-full-resolution-900.png" width="100" height="100"> </div>
+        <div class="side three"><img src="https://i.pinimg.com/originals/71/90/69/719069ad566bdc6cf58846b78c48bfce.jpg" width="100" height="100" ></div>
+        <div class="side four"><img src="https://i.pinimg.com/originals/0e/5f/85/0e5f8563a89ee6f833a029fb5dbab051.jpg" width="100" height="100" ></div>
+        <div class="side five"><img src="https://tse2.mm.bing.net/th?id=OIP.Dm2nUf2tV198rNLiE5kuiAHaHa&pid=Api&P=0&h=180" width="100" height="100"> </div>
+        <div class="side six"><img src="https://tse3.mm.bing.net/th?id=OIP.hrrIgD3M3wo0ZJOT0CiT-gHaHa&pid=Api&P=0&h=180" width="100" height="100"> </div>
+    </div>
+    <marque  behavior="scroll" class="scroll" direction="left" scrollamount="5">enti ela rotate aytundhi anipinchindha &#128517;</marque>
+     <div class="cube2">
+        <div class="side one"><img src="https://w7.pngwing.com/pngs/840/443/png-transparent-html-5-logo-web-development-html-css3-canvas-element-web-design-w3c-html5-logo-miscellaneous-text-orange.png" width="100" height="100"> </div>
+        <div class="side two"><img src="https://tse3.mm.bing.net/th?id=OIP.daWhf81i6-6y0nOoFURx0QHaI4&pid=Api&P=0&h=180" width="100" height="100"> </div>
+        <div class="side three"><img src="https://tse3.mm.bing.net/th?id=OIP.DEt_TbohHcb6KhpldP6vMwHaEK&pid=Api&P=0&h=180" width="100" height="100"> </div>
+        <div class="side four"><img src="https://tse4.mm.bing.net/th?id=OIP.XJk4nt1CGS3to3ijatbG9QHaHa&pid=Api&P=0&h=180" width="100" height="100"> </div>
+        <div class="side five"><img src="https://tse2.explicit.bing.net/th?id=OIP.8FwL9xfViTpEPr7EJOSZ9wHaEo&pid=Api&P=0&h=180" width="100" height="100"> </div>
+        <div class="side six"><img src="https://tse3.mm.bing.net/th?id=OIP.9Nm6mKz8DpFlBSlB4_2rGQHaFy&pid=Api&P=0&h=180" width="100" height="100"> </div>
+    </div>
+    <div class="cube3">
+        <div class="side one"><img src="https://media.istockphoto.com/id/1298772937/photo/purple-spotted-pit-viper.jpg?s=2048x2048&w=is&k=20&c=-yPqbqrbMuPSsDG7HC3dLtESzpxzummT7bPAYqZ92uA=" width="100" height="100" ></div>
+        <div class="side two">,<img src="https://cdn.pixabay.com/photo/2019/02/06/17/09/snake-3979601_1280.jpg" width="100" height="100"> </div>
+        <div class="side three"><img src="https://media.istockphoto.com/id/157479804/photo/venomous-snake.jpg?s=612x612&w=0&k=20&c=SsBAg5MdCGfGI-bM5cGCARbXjMuG-MEvTXledf49bKw=" width="100" height="100"> </div>
+        <div class="side four"><img src="https://media.istockphoto.com/id/929151704/photo/bush-viper-fangs-aggression.jpg?s=612x612&w=0&k=20&c=wDvbJEfREMedMUYILJps3C-MxPWqclioM14oEvp0f5o=" width="100" height="100">  </div>
+    
+        <div class="side five"><img src="https://media.istockphoto.com/id/624626136/photo/grass-snake.jpg?s=612x612&w=0&k=20&c=ALJjWcmpb5PjZRTl_Wrh4hSF8Ip3fZh42SdMXrFMmhQ=" width="100" height="100"></div>
+        <div class="side six"><img src="https://media.istockphoto.com/id/499519605/photo/snake-attack.jpg?s=612x612&w=0&k=20&c=lfjmBPV6JVNQKnpPwdDhdKUGbEGmAJK9VkTnMheSNRk=" width="100" height="100"> </div>
+    </div>
+    <div class="cube4">
+        <div class="side one"><img src="https://media.istockphoto.com/id/153499239/photo/lioness-displaing-dangerous-teeth.jpg?s=612x612&w=0&k=20&c=y-FDGTeFYKw3-CzXIrW-KL-EBkeSGgSWYR5iBJGSFKA=" width="100" height="100"> </div>
+        <div class="side two"><img src="https://media.istockphoto.com/id/490989354/photo/eyes-of-the-tiger.jpg?s=612x612&w=0&k=20&c=Q1vZqiKIIfGmnyub5A7U_EEf4OIco1DDmND5edOrV24=" width="100" height="100"> </div>
+        <div class="side three"><img src="https://media.istockphoto.com/id/490989354/photo/eyes-of-the-tiger.jpg?s=612x612&w=0&k=20&c=Q1vZqiKIIfGmnyub5A7U_EEf4OIco1DDmND5edOrV24=" width="100" height="100"></div>
+        <div class="side four"><img src="https://media.istockphoto.com/id/490989354/photo/eyes-of-the-tiger.jpg?s=612x612&w=0&k=20&c=Q1vZqiKIIfGmnyub5A7U_EEf4OIco1DDmND5edOrV24=" width="100" height="100"></div>
+        <div class="side five"><img src="https://media.istockphoto.com/id/490989354/photo/eyes-of-the-tiger.jpg?s=612x612&w=0&k=20&c=Q1vZqiKIIfGmnyub5A7U_EEf4OIco1DDmND5edOrV24=" width="100" height="100"></div>
+        <div class="side six"><img src="https://media.istockphoto.com/id/490989354/photo/eyes-of-the-tiger.jpg?s=612x612&w=0&k=20&c=Q1vZqiKIIfGmnyub5A7U_EEf4OIco1DDmND5edOrV24=" width="100" height="100"></div>
+    </div>
+   
+</body>
+</html>
